@@ -1,22 +1,4 @@
 #!/bin/bash
-#1. Take the entire file directory name as a parameter and take the string after the last '/' (if it exists) +
-#2. Save the string (from last '/') in a variable and do a TR operation according to the specified option (explained in #3); +
-#3. Make the whole program in a while loop that contains a switch statement for selecting options +
-#4. Each option must call a specific function (for lowercase, uppercase, recursive, help, errors) +
-
-#5. Make sure you cover specific kinky cases ( -,?,/,*, etc.. in file or directory name)
-# 5.1 spaces		+
-# 5.2 minus		+
-# 5.3 minus minus	+
-# 5.4 *		+
-# 5.5 _ , ?  		+
-# 5.6 . 		+
-
-#6. Check after -- if the first arugment is sed pattren
-#7. Mass change the following filenames according to the sed pattren
-#8. If -r flag is selected, the goal is to search through all the subdirectories for files that contains the exact initially desired filename
-#9. Save the files in a variable and apply the sed or -l,-u on the variable 
-
 helper(){
  echo "
 	 
@@ -110,8 +92,6 @@ while [ -n "$1" ]; do
 		fileNew="$fileNew$fileOri"
 	done
 	fileDir=$(echo "$1" | grep -o '.*\/')
-	echo "$fileNew"
-	echo "$fileOriOg"
 
 		if [ "$allowR" = "true" ]; then
 		for x in $(find . -name *"$fileOriOg"); do	       # With -r, find [start directory] -name [what to find]
