@@ -16,7 +16,7 @@ helper(){
 	 Options:
 	 	-l 			Lowercase file names that follow
 	 	-u			Uppercase file names that follow
-	 	-r			Recursively apply the modifictions
+	 	-r			Recursively apply the modifications
 	 	-h			Show help window
 	 	
 	 Examples:
