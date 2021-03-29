@@ -30,7 +30,7 @@ helper(){
 	     
 	 Notes:
 	 	- The script takes either -l or -u flag, not both. If both are provided, the last in the arugment list will be considered
-	 	- If a sed pattren is provided, both -l and -u flags (if set) will be ignored 
+	 	- If a sed pattern is provided, both -l and -u flags (if set) will be ignored 
 	 	- The file names to change are only inserted after -- This behaviour was implemented to support every possible file name
 	 	
 	 "
@@ -59,7 +59,7 @@ done
 
 while [ -n "$1" ]; do
 
-	if [ "$1" = "sed" ]						# If sed pattren is entered 
+	if [ "$1" = "sed" ]						# If sed pattern is entered 
 	then 
 
 	for ((i=3; i<=$#; ++i)); do 				        # Loop over parameters starting from third
